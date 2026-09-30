@@ -1,0 +1,5 @@
+# dsh-fixture-bad-plugin bundle patch: 把测试夹具挂载成 profile 里的一行。
+# 只用于验证 dsh-contract-check 的检出能力，验证完请移除（见 README）。
+- insert:
+    - id: dsh-fixture-bad-plugin
+      name: 'dsh-fixture-bad-plugin'

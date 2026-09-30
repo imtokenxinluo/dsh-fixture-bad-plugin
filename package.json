@@ -1,0 +1,28 @@
+{
+  "name": "dsh-fixture-bad-plugin",
+  "version": "0.0.1",
+  "private": true,
+  "description": "TEST FIXTURE ONLY — deliberately violates the DSH render contract so dsh-contract-check can be verified. Do not use as a real plugin.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.js",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "exports": {
+    ".": {
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}
